@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Passion One";
 }
 
 @font-face {
@@ -11,10 +12,25 @@ body {
   height: 4.6875rem;
   background-color: #063b5c;
   padding: 0 4.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  font-family: "Passion One";
   font-size: 2.25rem;
   margin: 0;
+}
+
+.navbar-lst {
+  list-style-type: none;
+  display: flex;
+  gap: 2.1875rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-lst li {
+  color: #f5e6c8;
+  font-size: 1.5rem;
 }
