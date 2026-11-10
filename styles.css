@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Passion One";
+  src: url("./fonts/Passion_One/PassionOne-Regular.ttf");
+}
+
+.navbar {
+  height: 4.6875rem;
+  background-color: #063b5c;
+  padding: 0 4.375rem;
+}
+
+.logo {
+  font-family: "Passion One";
+  font-size: 2.25rem;
+  margin: 0;
+}
