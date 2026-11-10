@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Passion One";
@@ -6,6 +12,11 @@ body {
 @font-face {
   font-family: "Passion One";
   src: url("./fonts/Passion_One/PassionOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inder";
+  src: url("./fonts/Inder/Inder-Regular.ttf");
 }
 
 .navbar {
@@ -33,4 +44,63 @@ body {
 .navbar-lst li {
   color: #f5e6c8;
   font-size: 1.5rem;
+}
+
+#hero {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 4.6875rem); /* 100vh - navbar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: -1;
+}
+
+#hero-body {
+  width: min-content;
+  margin-left: 10.5vw;
+}
+
+#hero-header,
+#hero-subheader {
+  padding: 0.2rem;
+  background-color: black;
+  color: #f5e6c8;
+  margin: 0;
+  font-family: "Inder";
+}
+
+#hero-header {
+  margin-bottom: 0.25rem;
+  font-size: 2.5rem;
+  width: max-content;
+}
+
+#hero-subheader {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+#hero-btns {
+  display: flex;
+  gap: 1.25rem;
+}
+
+#hero-btns button {
+  background-color: #3a8f6b;
+  color: #f5e6c8;
+  font-family: "Passion One";
+  border: 0;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
