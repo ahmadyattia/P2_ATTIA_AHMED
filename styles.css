@@ -125,7 +125,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, 15.5rem);
   justify-content: center;
-  gap: 7.75rem;
+  gap: 3rem;
   margin: 1.5rem 0;
 }
 
