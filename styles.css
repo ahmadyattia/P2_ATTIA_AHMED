@@ -36,16 +36,22 @@ body {
 }
 
 .navbar-lst {
-  list-style-type: none;
   display: flex;
   gap: 2.1875rem;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.navbar-lst li {
+.navbar-lst li,
+.navbar-lst-mobile li {
   color: #f5e6c8;
   font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
 }
 
 #hero {
@@ -193,5 +199,42 @@ body {
 
   html {
     font-size: 10px;
+  }
+
+  .navbar-lst {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+  }
+
+  .hamburger-icon {
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    height: stretch;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-lst-mobile {
+    min-width: max-content;
+    width: 30vw;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #f47b3a;
+    margin: 0;
+    padding: 1.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 999;
+    list-style-type: none;
   }
 }
